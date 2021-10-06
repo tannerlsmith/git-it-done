@@ -1,8 +1,9 @@
 # git-it-done
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<p>Deployed at https://tannerlsmith.github.io/git-it-done/</p>
 
-* Deployed at https://tannerlsmith.github.io/git-it-done/
 
-### Capturing Data returned from the API.
+## Capturing Data returned from the API.
 * With your fetch() request in place, we will need to read the data that were returned in the response.
 * Console log the response after the fetch to check the promise. 
 * Promises are callback functions. 
@@ -13,7 +14,7 @@
 <br>
 ![fetch-request](./assets/images/fetch-request.png)
 
-### Adding the Search Form
+## Adding the Search Form
 * The form with input capability will look like:
 <br>
 ![form input for html](./assets/images/form-input.png)
@@ -35,3 +36,15 @@
 <br>
 
 * with ```userFormEl.addEventListener('submit', formSubmitHandler);``` in place, check functionality by clicking the button and looking at the console. 
+
+## Display Response Data on Page
+* A function needs to be created in order to display Repos. 
+    * This response needs to be converted to json.
+        * ```response.json().then(function(data) {displayRepos(data,user)})```
+<br>
+
+* ```variableEl.textContent = searchterm``` gives you your parsed json. 
+* ```variableContainerEl.appendChild(repoEl)``` appends it to the dom. 
+* Below is how it gets displayed to HTML.
+<br>
+![](./assets/images/display-repo-for-loop.png)
