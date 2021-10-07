@@ -48,3 +48,9 @@
 * Below is how it gets displayed to HTML.
 <br>
 ![](./assets/images/display-repo-for-loop.png)
+<br>
+
+## Error Handling
+* 200s means that the HTTP request was successful.
+* 400s means that the server received HTTP req, but there's an issue missing info. 
+* To handle this error, update the getUserRepos() function's fetch() request to Else { alert()}
